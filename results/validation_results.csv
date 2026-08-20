@@ -1,0 +1,4 @@
+Model,Dataset,MAE,RMSE,R2
+XGBoost,Validation,10.598 ,14.855 ,0.939 
+RandomForest,Validation,13.195 ,19.188 ,0.898 
+LightGBM,Validation,10.034 ,14.092 ,0.945 
