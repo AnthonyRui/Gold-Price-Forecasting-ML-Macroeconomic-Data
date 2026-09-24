@@ -1,12 +1,10 @@
-# Gold Price Forecasting Using Machine Learning
+# Gold Price Forecasting with Machine Learning & Macroeconomic Data
 
 ## Overview
 
-This project develops a machine learning pipeline for forecasting the **next-day gold price** using historical gold prices and multiple macroeconomic and financial indicators.
+A Python machine learning project for **next-day gold price forecasting** using historical gold prices and macroeconomic/financial indicators, including the U.S. Dollar Index, Treasury yield, EFFR, CPI, PCE, and GDP.
 
-The dataset covers the period from **2001 to 2025** and combines gold market data with variables such as the U.S. Dollar Index, Treasury yield, Effective Federal Funds Rate, CPI, PCE, and GDP.
-
-The project includes data preprocessing, time-series feature engineering, model training, evaluation, and ensemble prediction.
+The pipeline builds lag, rolling, return, and calendar features, then compares XGBoost, Random Forest, LightGBM, and a validation-error-weighted ensemble using chronological training, validation, and test splits. Models predict the next-day logarithmic return, which is converted into a gold price forecast and evaluated with MAE, RMSE, and R².
 
 ## Data
 
